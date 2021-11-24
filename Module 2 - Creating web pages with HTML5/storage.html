@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local and Session storage</title>
+</head>
+<body>
+ 
+    <div></div>
+
+    <script>
+        console.log (sessionStorage);
+        console.log (localStorage);
+        
+      localStorage.setItem ('name','joe')
+      localStorage.setItem ('name2','nikky')
+      localStorage.setItem ('name3','anu')
+
+      var name2 = localStorage.getItem('name2');
+      console.log(name2);
+
+      sessionStorage.setItem('name', 'saskhi')
+
+    </script>
+
+    
+</body>
+</html>

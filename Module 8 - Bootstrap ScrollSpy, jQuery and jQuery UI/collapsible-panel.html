@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+    <style>
+        .panel {
+           
+            border-width: 1px ;
+            border-style: solid;
+            border-radius: 4px;
+            margin: 10px 0;
+           
+        }
+
+        .panel-heading {
+            cursor: pointer;
+        }
+
+        .panel-heading ,.panel-body {
+            padding: 10px 20px;
+        }
+
+        .panel-success {
+            
+             border-color: green;
+        }
+
+        .panel-success .panel-heading {
+            background-color: olivedrab;
+        }
+
+        .panel-danger {
+border-color: red;
+
+        }
+
+        .panel-danger  .panel-heading {
+            background-color: lightpink;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="panel panel-success">
+        <div class="panel-heading"  >
+        Message 1
+    </div>
+
+
+    <div class=" panel-body">
+        YOu have been subsribe to my channel
+    </div>
+    </div>
+
+    <div class="panel panel-danger">
+        <div class="panel-heading"  >
+            Message 1
+    </div>
+
+
+    <div class=" panel-body">
+        YOu have been subsribe to my channel
+    </div>
+    </div>
+
+    
+  
+    
+ <!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+    <script src="bootsrap/bootstrap-3.3.7-dist/jquery-3.6.0.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+          $('.panel-heading').click(function() {
+              $(this).closest('.panel').find('.panel-body').slideToggle(300);
+              
+          });
+
+    });
+
+    </script>
+</body>
+</html>

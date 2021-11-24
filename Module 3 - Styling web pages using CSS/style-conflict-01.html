@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolving conflicts in styles</title>
+    
+</head>
+<body>
+<!--
+    <p style="color:red;">some paragraph</p>
+-->
+
+<p id="para-1">some paragraph</p>
+
+
+    <style>
+        #para-1 {
+            color: rebeccapurple;
+            font-size: 2em;
+        }
+
+        p {
+            color: pink;
+        }
+
+        p#para-1 {
+            color:red;
+        }
+    </style>
+
+<link rel="stylesheet" href="style-conflicts-1.css">
+    
+</body>
+</html>

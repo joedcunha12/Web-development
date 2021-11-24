@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse hover</title>
+    <link href="bootsrap/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootsrap/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="fontawesome 4/fontawesome-free-5.15.2-web/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            
+            margin: 0;
+            background-image: url(images/grey_wash_wall.png);
+        }
+
+        .mybackground {
+            background: url(transparent_bg.png);
+        }
+    </style>
+</head>
+<body>
+    <br>
+
+    <Div class="container">
+        <div class="row">
+            <div class="col-md-3">
+    
+                        <img id="img1" class= "img-thumbnail" src="images/Anheuser-Busch.jpeg" alt="Beer">
+                        <div class="contenthover">
+                            <h3>Anheuser-Busch</h3>
+                            <p>
+                                Anheuser-Busch from Saint Louis, Missouri is known for its refreshing alcohol
+                            </p>
+                           
+                        </div>
+                     </div>
+
+                     <div class="col-sm-offset-1 col-md-3">
+    
+                        <img id="img2" class= "img-thumbnail" src="images/beer-heineken-can-300x300.jpg" alt="Beer">
+                        <div class="contenthover">
+                            <h3>Heineken</h3>
+                            <p>
+                                Dutch brand Heineken is a pale lager beer with 5% alcohol by volume produced by the Dutch brewing company Heineken                      International 
+                            </p>
+                           
+                        </div>
+                    </div>
+
+        <div class="col-sm-offset-1 col-md-3">
+    
+            <img id="img3" class= "img-thumbnail" src="images/root-beer-300x300.jpg" alt="Beer">
+            <div class="contenthover">
+                <h3>Chicken Cock</h3>
+                <p>
+                    Chicken cock is famous american whiskey with 43% of alcohol
+                </p>
+            </div>
+        </div>
+        </div>
+    </Div>
+    <br>
+
+    <Div class="container">
+        <div class="row">
+            <div class="col-md-3">
+    
+                        <img id="img4" class= "img-thumbnail" src="images/Free-Grolsch-Beer-300x300.png" alt="Beer">
+                        <div class="contenthover">
+                            <h3>Grolsch Beer</h3>
+                            <p>
+                                Grolsch Brewery, known simply as Grolsch, is a Dutch brewery founded in 1615 by Willem Neerfeldt in Groenlo
+                            </p>
+                           
+                        </div>
+                     </div>
+
+                     <div class="col-sm-offset-1 col-md-3">
+    
+                        <img id="img5" class= "img-thumbnail" src="images/e4f2b7e77a8171a79c93008c8beed23b.jpg" alt="Beer">
+                        <div class="contenthover">
+                            <h3>A & W</h3>
+                            <p>
+                                A&W Root Beer is a root beer brand primarily available in the United States and Canada, started in 1919 by Roy W. Allen.              
+
+                            </p>
+                           
+                        </div>
+                     </div>
+
+                     <div class="col-sm-offset-1 col-md-3">
+    
+                        <img id="img6" class= "img-thumbnail" src="images/AW-Root-Beer-300x300.jpg" alt="Beer">
+                        <div class="contenthover">
+                            <h3>Meantime</h3>
+                            <p>
+                                Meantime Brewing Company is a brewery based in Greenwich, London, England. 
+                            </p>
+                           
+                        </div>
+                     </div>
+
+                </div>
+         </div>
+
+         <script src="bootsrap/bootstrap-3.3.7-dist/jquery-3.6.0.min.js"></script>
+         <script src="bootsrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+         <script src="jquery.contenthover.js"></script>
+
+         <script>
+             $('document').ready(function() {
+
+                $('#img1').contenthover({
+            overlay_background:'#000',
+            overlay_opacity:0.8
+         });
+
+         $('#img2').contenthover({
+            effect:'slide',
+          slide_speed:300,
+          overlay_background:'#000',
+           overlay_opacity:0.8
+         });
+
+         $('#img3').contenthover({
+            effect:'slide',
+          slide_speed:500,
+          slide_direction: 'left',
+            overlay_background:'#000',
+            overlay_opacity:0.8
+         });
+
+         $('#img4').contenthover({
+            effect:'slide',
+          slide_speed:500,
+          slide_direction: 'right',
+            overlay_background:'#000',
+            overlay_opacity:0.8
+         });
+
+         $('#img5').contenthover({
+            effect:'slide',
+          slide_speed:500,
+          slide_direction: 'top',
+            overlay_background:'#000',
+            overlay_opacity:0.8
+         });
+
+         $('#img6').contenthover({
+            hover_class:'mybackground'
+         });
+             } );
+         </script>
+</body>
+</html>

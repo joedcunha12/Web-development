@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fadeIn & fadeOut</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="" style="text-align: center;">
+    <h1 style="text-align: center;">Click FadeOut and FadeIn button to fadeOut and fadeIn the image    </h1>
+    <button class="btn btn-success" id="fadeIn">FadeIn</button>
+    <button class="btn btn-warning" id="fadeOut">FadeOut</button>
+    </div>
+    <div align="center">
+    <img id="logo" src="img/download.png" height="400px" width="500px" >
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('#fadeIn').click(function() {
+            $('#logo').fadeIn(3000);
+        });
+        $('#fadeOut').click(function() {
+            $('#logo').fadeOut(3000);
+        });
+    });
+</script>
+</body>
+</html>

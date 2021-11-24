@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+    <style>
+        .message {
+            padding: 10px 20px;
+            border-width: 1px ;
+            border-style: solid;
+            border-radius: 4px;
+            margin: 10px 0;
+           
+        }
+
+        .message-success {
+             background-color: green;
+             border-color: lightgreen;
+        }
+
+        .message-danger {
+background-color: lightskyblue;
+border-color: maroon;
+        }
+
+        .yellow-bg {
+            background-color: yellow;
+        }
+
+        .olive-bg {
+            background-color: olive;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="message message-danger">Message 1</div>
+    <div class="message message-success">Message 2</div>
+
+  name:  <input type="text">
+   phone no. <input type="tel">
+    
+ <!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+    <script src="bootsrap/bootstrap-3.3.7-dist/jquery-3.6.0.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        //  $('.message').on('click',function(){
+          //console.log($(this).html() );
+      //    });
+      /*
+          $('.message').click(function($event){
+            console.log( 'click' , $(this).html() );
+            console.log($event);
+          });
+
+          $('.message').dblclick(function($event){
+            console.log( 'dblclick'  , $(this).html() );
+            console.log($event);
+          });
+          */
+
+          $('.message').on({
+            click:function ($event){
+            console.log( 'click' , $(this).html() );
+            console.log($event);
+          },
+          dblclick:function ($event){
+            console.log( 'dblclick' , $(this).html() );
+            console.log($event);
+           },
+
+           mouseenter:function () {
+            console.log('Mouseenter :', $(this).html() );
+           }
+      });
+
+     $('input').on({
+         focus: function(){
+             $(this).addClass('yellow-bg').removeClass('olive-bg');
+         },
+
+         blur : function(){
+             $(this).removeClass('yellow-bg').addClass('olive-bg');
+         }
+     });
+
+    });
+
+    </script>
+</body>
+</html>

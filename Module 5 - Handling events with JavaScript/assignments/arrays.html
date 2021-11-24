@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Languages</title>
+</head>
+<body>
+
+    <p>
+        Click on the Button different Computer programming languages display
+    </p>
+    <button onclick="ArrayDisplay()">Click on me</button>
+
+    <p id="ArrDispl">
+
+    </p>
+    <script>
+        function ArrayDisplay() {
+            var i;
+            var ul = '<ul>';
+            var p = "  " ;
+            var Prog_lan = ["Java", "C", "C++", "Perl"];
+            for ( i = 0; i < Prog_lan.length; i++ ) {
+                ul = ul + '<li>' + Prog_lan[i] + '</li>';
+               p = p + Prog_lan[i] + "  " ;}
+                document.getElementById('ArrDispl').innerHTML = p ;
+                alert ( p );
+            
+
+            
+        }
+       
+    </script>
+    
+</body>
+</html>

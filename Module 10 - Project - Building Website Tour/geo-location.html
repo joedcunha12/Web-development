@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo-location</title>
+    <style>
+        body {
+            margin-top: 50px;
+        }
+
+        #map-container {
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="error-message" ></div>
+    <div id="map-container" ></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+
+    <script>
+     window.onload = function () { if ( window.navigator.geolocation) {
+           navigator.geolocation.getCurrentPosition( success, showError );
+        }
+        else {
+            alert('sorry i m unable to track your location');
+        }
+
+        function success (position) {
+
+            var location = new google.maps.LatLng(position.coords.latitude,
+            position.coords.longitude );
+           
+           var map = new google.maps.Map(document.getElementById('map-container'), {
+               center: location,
+               zoom: 17
+           });
+
+         var marker = new google.maps.Marker( {
+             position: location,
+             "map": map,
+             title: 'where I am!'
+         });
+
+         marker.setMarker(map);
+    
+        }
+
+        function showError (error) {
+               var x = document.getElementById ('error-message')
+            switch(error.code) {
+
+                case error.PERMISSION_DENIED:
+                X.innerHTML = "User denied the request for Geolocation."
+                break;
+
+                case error.POSITION_UNAVAILABLE:
+                X.innerHTML = "Location information is unavailable."
+                break;
+
+                case error.TIMEOUT:
+                X.innerHTML = "The request to get user location timed out."
+                break;
+
+                case error.UNKNOWN_ERROR:
+                X.innerHTML = "An unknown error occurred."
+                break;
+            }
+        } 
+        };
+    </script>
+
+
+</body>
+</html>

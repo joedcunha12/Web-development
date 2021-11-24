@@ -1,0 +1,7 @@
+day 10 is study metarial is in below link because i have to run this on web server
+
+C:\edureka\day 10
+
+and in day 7 
+
+index.html  i have included bootstrap tour feature in this page. 

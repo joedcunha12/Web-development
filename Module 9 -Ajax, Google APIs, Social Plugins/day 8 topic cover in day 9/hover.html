@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        .contenthover{
+            color: white;
+            padding: 20px;
+            margin: 20px;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 0px;
+        }
+
+        .transparent {
+            background-image: url("contentHover/transparent_bg.png");
+        }
+    </style>
+
+</head>
+<body>
+    <div class="hover">
+    <img src="contentHover/images/Amstel-Light.jpg" id="beer">
+      <div class="contenthover" > 
+          <h2>Amstel Light Beer</h2>
+          <p>
+            Amstel Light Beer is very light beer. Amstel Light Beer is very light beer.
+          </p>
+     </div>
+</div>
+
+<div class="hover">
+    <img src="contentHover/images/Amstel-Light.jpg" id="beer2">
+      <div class="contenthover" > 
+          <h2>Amstel Light Beer</h2>
+          <p>
+            Amstel Light Beer is very light beer. Amstel Light Beer is very light beer.
+          </p>
+     </div>
+</div>
+
+<div class="hover">
+    <img src="contentHover/images/Amstel-Light.jpg" id="beer3">
+      <div class="contenthover" > 
+          <h2>Amstel Light Beer</h2>
+          <p>
+            Amstel Light Beer is very light beer. Amstel Light Beer is very light beer.
+          </p>
+     </div>
+</div>
+
+    <script src="bootsrap/bootstrap-3.3.7-dist/jquery-3.6.0.min.js"></script>
+    <script src="contentHover/js/jquery.contenthover.js"></script>
+
+     <script>
+         $(document).ready(function(){
+             $('#beer').contenthover({
+                 overlay_background: "#000",
+                 overlay_opacity: 0.8
+             });
+
+             $('#beer2').contenthover({
+                 overlay_background: "#000",
+                 overlay_opacity: 0.8,
+                 effect: 'slide',
+                 slide_speed: 300,
+                 slide_direction: "right"
+             });
+
+             $('#beer3').contenthover({
+                hover_class: "transparent",
+                overlay_opacity: 0.8
+             });
+
+
+
+         });
+     </script>
+</body>
+</html>

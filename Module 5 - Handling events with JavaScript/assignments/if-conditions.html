@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-Condition</title>
+</head>
+<body>
+    
+    <P> Check Whether User entered the information or Not. Please click on Click Here button. </P>
+    <button onclick="checkname()">Click here</button>
+    <p id="click"></p>
+
+<script>
+    function checkname() {
+        var name = prompt ("Enter Your Name");
+        if (name =="") {
+            status = "sorry...  you have not enterned any name";
+        }else {
+        status = " hello " + name + " welcome";
+        }
+        document.getElementById("click").innerHTML = status;
+    };
+</script>
+</body>
+</html>

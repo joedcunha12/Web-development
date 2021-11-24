@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table in HTML</title>
+    <style>
+        table, td, th {
+            border: 1px solid rgb(143, 58, 58);
+            border-collapse: collapse;
+            
+        }
+
+        td, th {
+            padding: 10px;
+        }
+
+        /*
+        tr:nth-child(even) {
+            background-color: chartreuse;
+        }
+ */
+       
+
+    </style>
+</head>
+<body>
+    
+    <table>
+        <caption>Tiket sales</caption>
+        <thead>
+
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>quantity</th>
+                <th>quality</th>
+                <th>price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td rowspan="2">joe</td>
+            <td rowspan="2">30</td>
+            <td rowspan="2">2</td>
+            <td rowspan="2">good</td>
+            <td>100</td>
+            </tr>
+<tr>
+    <td>100</td>
+</tr>
+            <tr>
+                <td>niiky</td>
+                <td>15</td>
+                <td>3</td>
+                <td>tsk</td>
+                <td>123</td>
+                </tr>
+
+                <tr>
+                    <td>aakash</td>
+                    <td>80</td>
+                    <td>3</td>
+                    <td>very bad</td>
+                    <td>1</td>
+                    </tr>
+
+                    <tr>
+                        <td>nishant</td>
+                        <td>5</td>
+                        <td>1</td>
+                        <td>low</td>
+                        <td>100</td>
+                        </tr>
+
+            
+        </tbody>
+        
+    </table>
+
+    
+</body>
+</html>

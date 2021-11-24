@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lists in HTML</title>
+    <style>
+       ul{
+       list-style-type:circle;
+    }
+
+    ol {
+        list-style-type: lower-alpha;
+    }
+
+    ol > li :nth-child(odd) {
+        color: red;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>order and unorder list in HTML</h1>
+    <ul>
+        <li>apples</li>
+        <li>Oranges</li>
+        <li>kivi</li>
+    </ul>
+    <ul>
+        <li>apples</li>
+        <li>Oranges</li>
+        <li>kivi</li>
+    </ul>
+
+    <ol>
+        <li>new year party</li>
+        <li>christmas evening</li>
+        <li>Easter party</li>
+        <li>good friday</li>
+    </ol>
+    
+</body>
+</html>

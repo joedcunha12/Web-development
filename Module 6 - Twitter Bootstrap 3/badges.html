@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badges</title>
+    <link href="bootsrap/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootsrap/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+    <style>
+        body {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+ 
+    <button class="btn btn-danger">Mails <span class="badge" id="mailid">12</span> </button>
+
+    <script>
+     
+     setTimeout(function () {
+         document.getElementById("mailid").innerHTML = 23;
+     },3000);
+
+    </script>
+
+</body>
+</html>

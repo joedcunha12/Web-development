@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <form action="process-form.html" method="POST">
+       <label for="name"> Name</label>
+       <input type="text" id="name" name="name" />
+
+       <label for="age"> Age</label>
+       <input type="number" id="age" name="age" value="30" />
+
+       <label for="Password"> Password</label>
+       <input type="Password" id="Password" name="Password" />
+
+       <label for="comments">comments</label>
+       <textarea id="comments" name="comments"></textarea>
+
+       <label for="cities">cities</label>
+       <select id="cities" name="cities" multiple>
+       <option value="nw">new york</option>
+       <option value="ba">bandra</option>
+       <option selected value="da">Dader</option>
+       <option value="va">vasai</option>
+
+       <label><input type="checkbox" name="cources" value="web development">web development</label>
+       <label><input type="checkbox" name="cources" value="football">football</label>
+       <label><input type="checkbox" name="cources" value="tennis">tennis</label>
+
+       <label><input type="radio" name="cources" value="web development">web development</label>
+       <label><input type="radio" name="cources" value="football">football</label>
+       <label><input type="radio" name="cources" value="tennis">tennis</label>
+
+
+
+
+       </select>
+
+       <input type="submit" value="sign me up" />
+       <input type="reset" value="reset the Forms" />
+
+    </form>
+</body>
+</html>

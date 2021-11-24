@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class Selectors</title>
+    <style>
+        p:first-child{
+        color: red;
+        }
+
+        p:first-letter{
+            font-weight: bold;
+            font-size: 2em;
+
+        }
+
+        .highlighted-first-line:first-line {
+            color: blue;
+            
+        }
+
+        input:focus {
+            background-color: azure;
+           /* outline: 5px solid grey; */
+        }
+    </style> 
+</head>
+<body>
+
+    <div>
+        <p>First para within div </p>
+        <p>Second para within div </p>
+        <p>Third para within div </p>
+        <p>Fourth para within div </p>
+    
+    </div>
+
+    <div class="highlighted-first-line">
+        
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+            make a type specimen book. It has survived not only five centuries, but also the leap into electronic 
+            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
+            sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+             including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+             standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+             make a type specimen book. It has survived not only five centuries, but also the leap into electronic 
+             typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset 
+             sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+              including versions of Lorem Ipsum.
+
+    </div>
+
+    <hr>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <br>
+    <label for="age">Age</label>
+    <input type="number" id="age" name="age" value="30">
+    
+</body>
+</html>

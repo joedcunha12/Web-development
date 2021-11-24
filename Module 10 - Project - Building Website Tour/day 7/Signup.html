@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up </title>
+    <link href="bootsrap/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootsrap/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+    <link href="fontawesome 4/fontawesome-free-5.15.2-web/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-default navbar-fixed-top" >
+        <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-target="#primary-menu" data-toggle="collapse" >
+                Menu
+
+               <!--
+                    <i class="icon-bar"></i>
+                    <i class="icon-bar"></i>
+                    <i class="icon-bar"></i>
+                -->
+            </button>
+            <div class="navbar-brand">
+               <a href="index.html"> Edureka! </a>
+            </div>
+        </div>
+            
+          <div class="collapse navbar-collapse" id="primary-menu">
+            <ul class="nav navbar-nav">
+                <li><a href="Our-story.html">Our story</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <!--
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses<i class="caret"></i> </a>
+                    <ul class="dropdown-menu" >
+                        <li><a href="#">hello</a></li>
+                        <li><a href="#">world</a></li>
+                        <li><a href="#">joe</a></li>
+                        <li><a href="#">steven</a></li>
+                    </ul>
+                </li>
+                -->
+                <li><a href="Signup.html">Signup</a></li>
+                <li><a href="Faq.html">Faq</a></li>
+                <li><a href="Enquiry.html">Enquiry</a></li>
+
+            </ul>
+          </div> 
+
+        </div>
+    </nav>
+
+
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+              <h2>Not Register yet!</h2>
+              <hr>
+              <h3>Signup</h3>
+              <hr>
+
+              
+              <form class="form-horizontal">
+                  <div class="form-group">
+                      <label for="name" class="control-label col-md-2">Name</label>
+                      <div class="col-md-6">
+                      <input type="text" name="name" id="name" class="form-control" placeholder="Enteryourname">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email" class="control-label col-md-2">email</label>
+                    <div class="col-md-6">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="email">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="Password" class="control-label col-md-2">Password</label>
+                    <div class="col-md-6">
+                    <input type="Password" name="Password" id="Password" class="form-control" >
+                  </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="Password" class="control-label col-md-2">Confirm Password</label>
+                    <div class="col-md-6">
+                    <input type="Password" name="Password" id="Password" class="form-control">
+                  </div>
+                </div>
+                 
+                <div class="form-group">
+                    <label for="checkbox-grp-position" class="control-label col-md-2">position</label>
+                    <div class="col-md-10" id="checkbox-grp-position">
+                     <label class="checkbox-inline">
+                         <input type="checkbox" name="checkbox-position" value="Web Developer"> Web Developer
+                        </label>
+                         <label class="checkbox-inline">    
+                         <input type="checkbox" name="checkbox-position" value="Data Developer"> Data Developer
+                        </label>
+                         <label class="checkbox-inline">
+                         <input type="checkbox" name="checkbox-position" value="Mobile Developer"> Mobile Developer
+                        </label>
+                         <label class="checkbox-inline">
+                         <input type="checkbox" name="checkbox-position" value="Apps Developer"> Apps Developer
+                        
+                        </label>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="col-md-10 col-md-offset-2">
+                        <input type="submit" value="Sumbit" class="btn btn-primary " >
+                        <input type="submit" value="Reset" class="btn btn-default ">
+                    </div>
+                </div>
+              </form>
+        
+          
+          </div>
+
+          <div class="col-sm-6">
+            <h2>Already Login</h2>
+            <hr>
+            <h3>Signin</h3>
+            <hr>
+
+            
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="username" class="control-label col-sm-2">username</label>
+                    <div class="col-sm-6">
+                    <input type="text" name="username" id="username" class="form-control" placeholder="username">
+                  </div>
+                </div>
+
+             
+              <div class="form-group">
+                  <label for="loginPassword" class="control-label col-sm-2">Password</label>
+                  <div class="col-sm-6">
+                  <input type="Password" name="Password" id="loginPassword" class="form-control" >
+                </div>
+            </div>
+              
+              
+              <div class="form-group">
+                  <div class="col-sm-10 col-sm-offset-2">
+                      <input type="submit" value="Sumbit" class="btn btn-primary " >
+                      <input type="submit" value="Reset" class="btn btn-default ">
+                  </div>
+              </div>
+            </form>
+      
+        
+        </div>
+      </div>
+  </div>
+
+  
+
+    
+   
+    
+    <footer >
+        <div class="text-center">
+    &copy; 2021 Brain4ce Education Solutions Pvt. Ltd. All rights Reserved.
+    <a  data-toggle="modal" href='#modal-id'> Terms & Conditions</a>
+</div>
+    <div class="modal fade" id="modal-id">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-title">Terms & Conditions</h2>
+                </div>
+                <div class="modal-body">
+                    <P> If you operate a SaaS app, a "Termination clause" will be very important. The relationship
+                         with your customers can end for any number of reasons, from a customer changing careers to 
+                         a new and better SaaS option becoming available or just general dissatisfaction with a s
+                         ervice.
+                    </P>
+                    <P>
+                        But as the owner of the app, you should have a way to actively end a relationship with a 
+                        customer <a href="#" >  under certain circumstances</a>
+                     </P>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+     </footer>
+    <script src="bootsrap/bootstrap-3.3.7-dist/jquery-3.6.0.min.js"></script>
+    <script src="bootsrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

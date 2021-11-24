@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.theme.css">
+
+    <script src="bootsrap/bootstrap-3.3.7-dist/jquery-3.6.0.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script>
+        $(function(){
+            var spinner = $("#spinner").spinner({min:1,max:10});
+            $("#spinner").bind("keydown", function(event) {
+              event.preventDefault();
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>
+        <label for="spinner" >Select Value:</label>
+        <input id="spinner" name="value">
+    </p>
+</body>
+</html>

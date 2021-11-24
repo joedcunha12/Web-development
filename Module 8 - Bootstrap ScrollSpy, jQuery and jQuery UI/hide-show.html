@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide and Show </title>
+    <style>
+        .message {
+            padding: 10px 20px;
+            border-width: 1px ;
+            border-style: solid;
+            border-radius: 4px;
+            margin: 10px 0;
+           
+        }
+
+        .message-success {
+             background-color: green;
+             border-color: lightgreen;
+        }
+
+        .message-danger {
+background-color: lightskyblue;
+border-color: maroon;
+        }
+
+      
+    </style>
+</head>
+<body>
+
+    <div class="message message-danger">Message 1</div>
+    <div class="message message-success">Message 2</div>
+
+    <button id="btn-hide">hide</button>
+
+    <button id="btn-show">show</button>
+
+    <button id="btn-toggle">Toggle</button>
+
+ 
+    
+ <!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+    <script src="bootsrap/bootstrap-3.3.7-dist/jquery-3.6.0.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+       $('#btn-hide').on('click',function() {
+           $('.message-danger').hide();
+       });
+       
+       $('#btn-show').on('click',function() {
+           $('.message-danger').show();
+    });
+    $('#btn-toggle').on('click',function() {
+           $('.message-danger').toggle();
+    });
+});
+
+    </script>
+</body>
+</html>

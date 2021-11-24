@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Menus sites</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        nav {
+            float: left;
+            width:100%;
+            background: #000;
+            position: relative;
+        }
+
+        nav ul li {
+            display: inline-block;
+            float: left;
+            list-style: none;
+        }
+
+         nav ul li a {
+                  display: block;
+                  text-decoration: none;
+                  padding:20px;
+                  background: #000;
+         }
+
+         nav ul li a:hover {
+             background: deepskyblue;
+         }
+
+         nav ul li ul.megamenus {
+             width: 100%;
+             padding: 2% 0;
+             background: lightseagreen;
+             position: absolute;
+             display: none;
+             }
+           
+         nav ul li:hover ul.megamenus {
+                display: block;
+                left:0;
+         }
+
+         nav ul li:hover ul.megamenus h1 {
+             padding: 10px 0;
+             font-size: 20px;
+             color: #000;
+         }
+
+         nav ul li:hover ul.megamenus li {
+             width: 190px;
+             margin:0 40px 0 40px;
+
+         }
+
+         nav ul li:hover ul.megamenus li a {
+             padding: 10px;
+         }
+
+         nav ul li:hover ul.megamenus li a:hover {
+             background: turquoise;
+         }
+
+    </style>
+</head>
+<body>
+    
+    <nav>
+    <ul>
+        <li><a href="#">Electronics</a>
+        <ul class="megamenus">
+            <li>
+        <h1>Mobiles</h1>
+        <a href="#">Nokia</a>
+        <a href="#">samsung</a>
+        <a href="#">sony</a>
+        <a href="#">realme</a>
+        <a href="#">redmi</a>
+    </li>
+    <li>
+        <h1>Laptops</h1>
+        <a href="#">Sony</a>
+        <a href="#">Dell</a>
+        <a href="#">Samsung</a>
+        <a href="#">Apple</a>
+        <a href="#">HP</a>
+        <a href="#">Accer</a>
+        <a href="#">Lenovo</a>
+    </li>
+    <li>
+<h1>Cameras</h1>
+<a href="#">Canon</a>
+<a href="#">Nikon</a>
+<a href="#">Sony</a>
+<a href="#">Panasonic</a>
+<a href="#">Fujifilm</a>
+</li>
+    <li>
+<h1>Audio & Video</h1>
+<a href="#">Philips</a>
+<a href="#">Motorola</a>
+<a href="#">JBL</a>
+<a href="#">F&D</a>
+<a href="#">Apple</a>
+</li>
+    <li>
+<h1>Kitchen Appliances</h1>
+<a href="#">Microwave Ovens</a>
+<a href="#">Mixer/Juicer/Grinders</a>
+<a href="#">Induction Cooktops</a>
+<a href="#">Air Fryers</a>
+<a href="#">Electric Kettles</a>
+</li>
+    </ul>
+
+</li>
+
+        <li><a href="#">Men</a>
+            <ul class="megamenus">
+                <li>
+            <h1>Mobiles</h1>
+            <a href="#">Nokia</a>
+            <a href="#">samsung</a>
+            <a href="#">sony</a>
+            <a href="#">realme</a>
+            <a href="#">redmi</a>
+        </li>
+        <li>
+            <h1>Laptops</h1>
+            <a href="#">Sony</a>
+            <a href="#">Dell</a>
+            <a href="#">Samsung</a>
+            <a href="#">Apple</a>
+            <a href="#">HP</a>
+            <a href="#">Accer</a>
+            <a href="#">Lenovo</a>
+        </li>
+        <li>
+    <h1>Cameras</h1>
+    <a href="#">Canon</a>
+    <a href="#">Nikon</a>
+    <a href="#">Sony</a>
+    <a href="#">Panasonic</a>
+    <a href="#">Fujifilm</a>
+    </li>
+        <li>
+    <h1>Audio & Video</h1>
+    <a href="#">Philips</a>
+    <a href="#">Motorola</a>
+    <a href="#">JBL</a>
+    <a href="#">F&D</a>
+    <a href="#">Apple</a>
+    </li>
+        <li>
+    <h1>Kitchen Appliances</h1>
+    <a href="#">Microwave Ovens</a>
+    <a href="#">Mixer/Juicer/Grinders</a>
+    <a href="#">Induction Cooktops</a>
+    <a href="#">Air Fryers</a>
+    <a href="#">Electric Kettles</a>
+    </li>
+        </ul>
+        
+        </li>
+
+        <li><a href="#">Women</a>
+            <ul class="megamenus">
+                <li>
+            <h1>Mobiles</h1>
+            <a href="#">Nokia</a>
+            <a href="#">samsung</a>
+            <a href="#">sony</a>
+            <a href="#">realme</a>
+            <a href="#">redmi</a>
+        </li>
+        <li>
+            <h1>Laptops</h1>
+            <a href="#">Sony</a>
+            <a href="#">Dell</a>
+            <a href="#">Samsung</a>
+            <a href="#">Apple</a>
+            <a href="#">HP</a>
+            <a href="#">Accer</a>
+            <a href="#">Lenovo</a>
+        </li>
+        <li>
+    <h1>Cameras</h1>
+    <a href="#">Canon</a>
+    <a href="#">Nikon</a>
+    <a href="#">Sony</a>
+    <a href="#">Panasonic</a>
+    <a href="#">Fujifilm</a>
+    </li>
+        <li>
+    <h1>Audio & Video</h1>
+    <a href="#">Philips</a>
+    <a href="#">Motorola</a>
+    <a href="#">JBL</a>
+    <a href="#">F&D</a>
+    <a href="#">Apple</a>
+    </li>
+        <li>
+    <h1>Kitchen Appliances</h1>
+    <a href="#">Microwave Ovens</a>
+    <a href="#">Mixer/Juicer/Grinders</a>
+    <a href="#">Induction Cooktops</a>
+    <a href="#">Air Fryers</a>
+    <a href="#">Electric Kettles</a>
+    </li>
+        </ul> 
+        </li>
+        <li><a href="#">Sports</a>
+            <ul class="megamenus">
+                <li>
+            <h1>Mobiles</h1>
+            <a href="#">Nokia</a>
+            <a href="#">samsung</a>
+            <a href="#">sony</a>
+            <a href="#">realme</a>
+            <a href="#">redmi</a>
+        </li>
+        <li>
+            <h1>Laptops</h1>
+            <a href="#">Sony</a>
+            <a href="#">Dell</a>
+            <a href="#">Samsung</a>
+            <a href="#">Apple</a>
+            <a href="#">HP</a>
+            <a href="#">Accer</a>
+            <a href="#">Lenovo</a>
+        </li>
+        <li>
+    <h1>Cameras</h1>
+    <a href="#">Canon</a>
+    <a href="#">Nikon</a>
+    <a href="#">Sony</a>
+    <a href="#">Panasonic</a>
+    <a href="#">Fujifilm</a>
+    </li>
+        <li>
+    <h1>Audio & Video</h1>
+    <a href="#">Philips</a>
+    <a href="#">Motorola</a>
+    <a href="#">JBL</a>
+    <a href="#">F&D</a>
+    <a href="#">Apple</a>
+    </li>
+        <li>
+    <h1>Kitchen Appliances</h1>
+    <a href="#">Microwave Ovens</a>
+    <a href="#">Mixer/Juicer/Grinders</a>
+    <a href="#">Induction Cooktops</a>
+    <a href="#">Air Fryers</a>
+    <a href="#">Electric Kettles</a>
+    </li>
+        </ul>
+        
+        </li>
+        <li><a href="#">Books</a>
+            <ul class="megamenus">
+                <li>
+            <h1>Mobiles</h1>
+            <a href="#">Nokia</a>
+            <a href="#">samsung</a>
+            <a href="#">sony</a>
+            <a href="#">realme</a>
+            <a href="#">redmi</a>
+        </li>
+        <li>
+            <h1>Laptops</h1>
+            <a href="#">Sony</a>
+            <a href="#">Dell</a>
+            <a href="#">Samsung</a>
+            <a href="#">Apple</a>
+            <a href="#">HP</a>
+            <a href="#">Accer</a>
+            <a href="#">Lenovo</a>
+        </li>
+        <li>
+    <h1>Cameras</h1>
+    <a href="#">Canon</a>
+    <a href="#">Nikon</a>
+    <a href="#">Sony</a>
+    <a href="#">Panasonic</a>
+    <a href="#">Fujifilm</a>
+    </li>
+        <li>
+    <h1>Audio & Video</h1>
+    <a href="#">Philips</a>
+    <a href="#">Motorola</a>
+    <a href="#">JBL</a>
+    <a href="#">F&D</a>
+    <a href="#">Apple</a>
+    </li>
+        <li>
+    <h1>Kitchen Appliances</h1>
+    <a href="#">Microwave Ovens</a>
+    <a href="#">Mixer/Juicer/Grinders</a>
+    <a href="#">Induction Cooktops</a>
+    <a href="#">Air Fryers</a>
+    <a href="#">Electric Kettles</a>
+    </li>
+        </ul>
+        </li>
+        <li><a href="#">Stationery</a>
+            <ul class="megamenus">
+                <li>
+            <h1>Mobiles</h1>
+            <a href="#">Nokia</a>
+            <a href="#">samsung</a>
+            <a href="#">sony</a>
+            <a href="#">realme</a>
+            <a href="#">redmi</a>
+        </li>
+        <li>
+            <h1>Laptops</h1>
+            <a href="#">Sony</a>
+            <a href="#">Dell</a>
+            <a href="#">Samsung</a>
+            <a href="#">Apple</a>
+            <a href="#">HP</a>
+            <a href="#">Accer</a>
+            <a href="#">Lenovo</a>
+        </li>
+        <li>
+    <h1>Cameras</h1>
+    <a href="#">Canon</a>
+    <a href="#">Nikon</a>
+    <a href="#">Sony</a>
+    <a href="#">Panasonic</a>
+    <a href="#">Fujifilm</a>
+    </li>
+        <li>
+    <h1>Audio & Video</h1>
+    <a href="#">Philips</a>
+    <a href="#">Motorola</a>
+    <a href="#">JBL</a>
+    <a href="#">F&D</a>
+    <a href="#">Apple</a>
+    </li>
+        <li>
+    <h1>Kitchen Appliances</h1>
+    <a href="#">Microwave Ovens</a>
+    <a href="#">Mixer/Juicer/Grinders</a>
+    <a href="#">Induction Cooktops</a>
+    <a href="#">Air Fryers</a>
+    <a href="#">Electric Kettles</a>
+    </li>
+        </ul>
+        </li>
+    </ul>
+</nav> 
+    
+</body>
+</html>

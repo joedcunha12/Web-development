@@ -1,0 +1,20 @@
+@model FusionChartsSamples.SampleViewModel
+@{
+	Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+  <script src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.widgets.js"></script>   
+    <script src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <script src="sample.js"></script>
+    <script src="sample2.js"></script>
+</head>
+<body>
+<div>
+    <div id="chartContainer">@Html.Raw(ViewData["Chart"])</div>
+</div>
+
+</body>
+</html>

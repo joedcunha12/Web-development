@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinators</title>
+    <style>
+        div span {
+            color: red;
+        }
+
+        div > span {
+            font-size: 2em;
+        }
+
+        div.Secondary-context > p > span {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <span>Span directly within div (child of a div)</span>
+        <p>Para 1</p>
+        <p>Para 2</p>
+        
+        <p>
+            para 3
+            <span>span 1 in para 3</span>
+            <span>span 2 in para 3</span>
+            <span>span 3 in para 3</span>
+        </p>
+        <P>Para 4</P>
+    </div>
+
+    <div class="Secondary-context">
+        <p>Para 1</p>
+        <p>Para 2</p>
+        
+        <p>
+            para 3
+            <span>span 1 in para 3</span>
+            <span>span 2 in para 3</span>
+            <span>span 3 in para 3</span>
+        </p>
+        <P>Para 4</P> 
+    </div>
+
+    <p>Para without of div</p>
+
+    <span>Span without of the div</span>
+
+    
+</body>
+</html>

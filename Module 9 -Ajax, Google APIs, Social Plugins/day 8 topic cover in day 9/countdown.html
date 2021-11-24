@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>countdown</title>
+    <link href="jquery.countdown.package-2.1.0 (1)/css/jquery.countdown.css" rel="stylesheet">
+    <style>
+        #newyear {
+            overflow: auto;
+        }
+
+        .countdown-amount {
+            color:red ;
+        }
+
+        .countdown-section {
+	
+	font-size: 200%;
+	
+}
+    </style>
+</head>
+<body>
+
+    <div id="newyear"></div>
+    
+    <script src="bootsrap/bootstrap-3.3.7-dist/jquery-3.6.0.min.js"></script>
+    <script src="jquery.countdown.package-2.1.0 (1)/js/jquery.plugin.min.js"></script>
+    <script src="jquery.countdown.package-2.1.0 (1)/js/jquery.countdown.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var newYear = new Date();
+            newYear.setFullYear(newYear.getFullYear() + 1);
+            newYear.setDate(1);
+            newYear.setMonth(0);
+
+            $('#newyear').countdown({
+                until:newYear
+            });
+
+        });
+    </script>
+</body>
+</html>

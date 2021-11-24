@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency</title>
+    <link ref='stylesheet' href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link ref='stylesheet' href="jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
+    <script src="Bootsrap/bootstrap-3.3.7-dist/jquery-3.6.0.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script> 
+
+   <script src="global/globalize.js"></script>
+   <script src="global/globalize.culture.en-US.js"></script>
+   <script src="global/globalize.culture.de-DE.js"></script>
+   <script src="global/globalize.culture.ar-YE.js"></script>
+
+   <script>
+       $(function(){
+           $('#currency').change(function(){
+               $('#Spinner').spinner("option", "culture",$(this).val());
+           });
+
+           $('#Spinner').spinner({
+               min:1,
+               step:10,
+               numberFormat:"C"
+           });
+       });
+   </script>
+</head>
+<body>
+    <div style="position: absolute;top: 20px;left: 50px;">
+        <p>
+            <label for="currency">currency</label>
+            <select id="currency" name="currency">
+                <option value="en-US">US $</option>
+                <option value="de-DE">EUR €</option>
+                <option value="ar-YE">Yemen Rial ﷼</option>
+            </select>
+        </p>
+    </div>
+
+    <div style="position:absolute;top:20px;left:400px">
+<label for="Spinner">Amount</label>
+<input id="Spinner" name="Spinner" value="1">
+    </div>
+</body>
+</html>

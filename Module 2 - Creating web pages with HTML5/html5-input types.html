@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 input types and attributes</title>
+</head>
+<body>
+    
+    <form enctype="multipart/form-data" method="post">
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" min="1" max="10" step="0.5" name="Quantity"  >
+    <br>
+    <label for="email">Your email (text):</label>
+    <input type="email" id="email" placeholder="your email" required name="email">
+    <br>
+    <label for="email">Your email (email):</label>
+    <input type="email" id="email" autocomplete="on" name="email" >
+    <br>
+    <label for="url">your home page:</label>
+    <input type="url" id="url" name="url">
+    <br>
+    <label for="numbers">telephone numbers:</label>
+    <input type="tel" id="numbers" name="telphone numbers" autofocus>
+    <br>
+    <label for="range">Rating for course:</label>
+    <input type="range" id="range" min="1" max="5" name="ratings">
+    <br>
+    <label for="date">start date of journey:</label>
+    <input type="date" id="date"  >
+    <br>
+    <label for="date"> date :</label>
+    <input type="date" id="date" name="date">
+    <br>
+    <label for="time">time:</label>
+    <input type="time" id="time" name="time">
+    <br>
+    <label for="search"> search of the sites:</label>
+    <input type="search" id="search" name="search">
+    <br>
+
+    <input type="file" name="profile" multiple>
+    <br>
+
+    <input type="submit" value="submit the form">
+    <input type="submit" value="submit the form (without validate)" formnovalidate>
+    
+</form>
+    
+</body>
+</html>

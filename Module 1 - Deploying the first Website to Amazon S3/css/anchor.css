@@ -1,0 +1,23 @@
+a {
+    color: aqua;
+}
+
+a:hover {
+    color: red;
+    font-size: 2em;
+}
+
+a:visited {
+    color: white;
+    font-size: 3em;
+}
+
+a:active {
+    color: black;
+    font-size: 4em;
+}
+
+#tag-1 {
+    text-decoration: none;
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Including JS</title>
+    <style>
+        div {
+            border: 1px solid crimson;
+            padding: 10px;
+            border-radius: 4px;
+            background-color: lightcoral;
+            text-shadow: 2px 2px 2px red;
+        }
+    </style>
+</head>
+<body>
+    <div onclick="alert ('div has been clicked');">
+        Some Content
+    </div>
+
+    <div id="div-2" >
+        Some Content 2
+    </div>
+
+    <div id="div-3" >
+        Some Content 3
+    </div>
+
+    
+    <script>
+        var div2 = document.getElementById('div-2');
+        div2.addEventListener(
+            'mouseover', function() {
+                alert('Mouse is over div-2');
+                }
+        );
+    </script>
+    
+    <script src="js/IncludingJS.js"></script>
+</body>
+</html>

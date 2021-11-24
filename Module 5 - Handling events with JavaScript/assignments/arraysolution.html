@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>Click on the button to display the list of programming languages...</p>
+        <button onclick="ArrayDisplay()">Click on me</button>
+        <p id="ArrDispl">
+
+        </p>
+        <script>
+        function ArrayDisplay() {
+            var index;
+            var text1 = "<ul>";
+        var text = "";
+        var Prog_lan = ["Java", "C", "C++", "Perl"];
+        for (index = 0; index < Prog_lan.length; index++) 
+        {text1 += "<li>" + Prog_lan[index] + "</li>";
+        text +=  Prog_lan[index] + " " ;}
+        document.getElementById("ArrDispl").innerHTML = text;
+        alert (text);
+    }
+        </script>
+        </body>
+        </html>
